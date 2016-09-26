@@ -30,22 +30,21 @@
   height: 80rpx;
   flex-direction: row;
   background-color: green;
+  align-items: center;
 }
 
 .body-item-icon {
   position: relative;
   padding-left: 15rpx;
+  padding-top: 15rpx;
 }
 
 .body-item-title {
   position: relative;
   padding-left: 15rpx;
+  padding-bottom: 15rpx;
 }
 
 .body-item-arrow {
   margin-right: 15rpx;
 }
-/*
-.usermotto {
-  margin-top: 200px;
-}*/
