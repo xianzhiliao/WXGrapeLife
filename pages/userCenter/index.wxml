@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <scroll-view scroll-y = "true">
+
+    <view  bindtap="bindViewTap" class="header">
+      <image class="header-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="header-nickname">{{userInfo.nickName}}</text>
+    </view>
+
+    <view class="body">
+    <block wx:for-items="{{itemList}}">
+      <view class="body-item" id="{{item.id}}">
+        <image class="body-item-icon" src="{{item.iconPath}}" mode="aspectFill"> </image>
+        <text class="body-item-title">{{item.title}}</text>
+      </view>
+    </block>
+    </view>
+
+  </scroll-view>
+</view>

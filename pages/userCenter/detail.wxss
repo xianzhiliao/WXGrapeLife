@@ -1,0 +1,4 @@
+/**detail.wxss**/
+.usermotto {
+  margin-top: 200px;
+}
