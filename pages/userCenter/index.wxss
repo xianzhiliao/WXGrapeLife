@@ -19,30 +19,31 @@
 }
 
 .body {
-  margin-top: 20rpx;
   display: flex;
   flex-direction: column;
+  margin-top: 20rpx;
 }
 
 .body-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   margin-top: 10rpx;
   margin-bottom: 10rpx;
   height: 80rpx;
-  flex-direction: row;
-  background-color: green;
-  align-items: center;
+  background-color: white;
 }
 
 .body-item-icon {
-  position: relative;
-  padding-left: 15rpx;
-  padding-top: 15rpx;
+  position: absolute;
+  left: 15rpx;
+  width: 48rpx;
+  height: 48rpx;
 }
 
 .body-item-title {
-  position: relative;
-  padding-left: 15rpx;
-  padding-bottom: 15rpx;
+  position: absolute;
+  left: 78rpx;
 }
 
 .body-item-arrow {
