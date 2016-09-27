@@ -62,14 +62,17 @@ Page({
     })
   },
   itemTap:function(e){
-      var id = e.currentTarget.id, list = this.data.itemList;
-        for (var i = 0, len = list.length; i < len; ++i) {
-            if (list[i].id == id) {
-                wx.navigateTo({
-                    url:list[i].navUrl
-                })
-            } else {
-            }
+    var id = e.currentTarget.id, list = this.data.itemList;
+    var title = list[id].title;
+    var u = list[id].navUrl+'?title='+title;
+    wx.navigateTo({
+        url:u,
+        complete:function(){
+            console.log('navigateComplete')
+            // wx.setNavigationBarTitle({
+            //     title: title
+            // })
         }
+    })
   }
 })

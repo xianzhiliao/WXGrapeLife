@@ -3,18 +3,23 @@
 var app = getApp()
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {}
+    title: 'Hello World'
   },
-  onLoad: function () {
-    console.log('onLoad')
-    var that = this
-    //调用应用实例的方法获取全局数据
-    app.getUserInfo(function(userInfo){
-      //更新数据
-      that.setData({
-        userInfo:userInfo
-      })
+  onReady:function (options){
+    
+  },
+  onLoad: function (options) {
+    if(options){
+
+    }
+    this.setData({
+      title:options.title
     })
+  setTimeout(function () {
+    wx.setNavigationBarTitle({
+    // 有问题？？？？？
+    title:options.title
+    })
+  }, 2000)
   }
 })

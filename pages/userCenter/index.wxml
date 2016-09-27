@@ -9,7 +9,7 @@
 
     <view class="body">
     <block wx:for-items="{{itemList}}">
-      <view class="body-item" id="{{item.id}}" bindtap="itemTap">
+      <view class="body-item" id="{{index}}" bindtap="itemTap">
         <image class="body-item-icon" src="{{item.iconPath}}" mode="aspectFill"> </image>
         <text class="body-item-title">{{item.title}}</text>
       </view>
