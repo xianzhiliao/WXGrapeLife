@@ -44,6 +44,9 @@ Page({
             }
         ]
   },
+  onShow: function(){
+       wx.hideNavigationBarLoading()
+  },
   onLoad: function () {
     console.log('onLoad')
     var that = this

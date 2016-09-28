@@ -9,17 +9,16 @@ Page({
     
   },
   onLoad: function (options) {
-    if(options){
-
+    if(options != null && options.title != null){
+      this.setData({
+        title:options.title
+      })
+      setTimeout(function () {
+        wx.setNavigationBarTitle({
+          // 有问题？？？？？
+          title:options.title
+        })
+      }, 2000)
     }
-    this.setData({
-      title:options.title
-    })
-  setTimeout(function () {
-    wx.setNavigationBarTitle({
-    // 有问题？？？？？
-    title:options.title
-    })
-  }, 2000)
   }
 })

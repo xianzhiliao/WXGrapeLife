@@ -1,0 +1,6 @@
+<template name="cell">
+  <view class="page-cell">
+    <!--<image class="page-cell-icon" src="{{icon}}" background-size="cover"></image>-->
+    <text class="page-cell-name">{{name}}</text>
+  </view>
+</template>

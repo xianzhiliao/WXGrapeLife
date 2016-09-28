@@ -1,10 +1,15 @@
-<!--index.wxml-->
+<import src="header.wxml" />
+
 <view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+  <block wx:for-items="{{contentList}}">
+    <template is="header" data="{{title: item.name}}"/>
+      <view class ="page-section" >
+        <block wx:for-items="{{item.goods_list}}" wx:for-item="goods">
+          <view class = "page-cell">
+            <image class="page-cell-icon" src="{{goods.server.icon}}" mode="aspectFill"> </image>
+            <text class="page-cell-name">{{goods.server.name}}</text>
+          </view>
+        </block>
+      </view>
+  </block>
 </view>
