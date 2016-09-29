@@ -3,10 +3,10 @@
 <view class="container">
   <block wx:for-items="{{contentList}}">
     <template is="header" data="{{title: item.name}}"/>
-      <view class ="page-section" >
+      <view class="page-section">
         <block wx:for-items="{{item.goods_list}}" wx:for-item="goods">
-          <view class = "page-cell">
-            <image class="page-cell-icon" src="{{goods.server.icon}}" mode="aspectFill"> </image>
+          <view class="page-cell">  
+            <!--<image class ="page-cell-iocn" src="{{goods.server.icon}}" mode="aspectFill"> </image>-->
             <text class="page-cell-name">{{goods.server.name}}</text>
           </view>
         </block>
