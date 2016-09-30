@@ -1,39 +1,41 @@
 
 .page-header {
   display: flex;
-  font-size: 32rpx;
-  color: red;
   flex-direction: column;
   align-items: center;
   margin-top: 20rpx;
 }
 .page-header-text {
-  padding: 20rpx 40rpx;
+  font-size: 32rpx;
+  color: red;
+
+  background-color: blue;
 }
 .page-section {
-  display: block;
-	margin-top: 80rpx;
+  display: inline-block;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: yellow;
+  margin-top: 60rpx;
 }
 .page-cell {
-  display: flex;
-  flex-flow: column,wrap;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 400rpx;
   margin-top: 20rpx;
-	width: 50%;
-	height: 400rpx;
   background-color: green;
+  position: relative;
 }
 
 .page-cell-icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 300rpx;
   height: 300rpx;
-  margin-top: 20rpx;
+  padding: 40rpx;
 }
 
 .page-cell-name {
-  align-items: center;
-  justify-content: center;
   font-size: 16rpx;
 }

@@ -6,7 +6,7 @@
       <view class="page-section">
         <block wx:for-items="{{item.goods_list}}" wx:for-item="goods">
           <view class="page-cell">  
-            <!--<image class ="page-cell-iocn" src="{{goods.server.icon}}" mode="aspectFill"> </image>-->
+            <image class ="page-cell-iocn" src="{{goods.server.icon}}" mode="aspectFill"> </image>
             <text class="page-cell-name">{{goods.server.name}}</text>
           </view>
         </block>
