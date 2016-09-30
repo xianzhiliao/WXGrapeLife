@@ -4,11 +4,12 @@
     "pages/category/index",
     "pages/VIP/index",
     "pages/userCenter/index",
-    "pages/userCenter/detail"
+    "pages/userCenter/detail",
+    "pages/goodsDetail/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "black",
+    "navigationBarBackgroundColor": "#35495e",
     "navigationBarTextStyle":"white"
   },
   "tabBar":{

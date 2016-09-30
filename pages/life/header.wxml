@@ -1,5 +1,5 @@
-<template name="header">
-  <view class="page-header">
-    <text class="page-header-text">{{title}}</text>
+<template name="page-section-header">
+  <view class="page-section-header">
+    <text class="page-section-header-text">{{title}}</text>
   </view>
 </template>

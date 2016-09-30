@@ -1,15 +1,24 @@
 <import src="header.wxml" />
 
 <view class="container">
-  <block wx:for-items="{{contentList}}">
-    <template is="header" data="{{title: item.name}}"/>
-      <view class="page-section">
-        <block wx:for-items="{{item.goods_list}}" wx:for-item="goods">
-          <view class="page-cell">  
-            <image class ="page-cell-iocn" src="{{goods.server.icon}}" mode="aspectFill"> </image>
-            <text class="page-cell-name">{{goods.server.name}}</text>
-          </view>
-        </block>
-      </view>
-  </block>
+  <scroll-view>
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+      <block wx:for="{{ads}}" wx:for-index="index">
+        <swiper-item>
+          <image src="{{item.image_url}}" class="swiper-image" mode="aspectFill"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <block wx:for-items="{{contentList}}" wx:for-index="section">
+      <template is="page-section-header" data="{{title: item.name}}"/>
+        <view class="page-section">
+          <block wx:for-items="{{item.goods_list}}" wx:for-item="goods" wx:for-index="row">
+            <view class="page-cell {{index % 2 ==0 ? '' : 'space'}}" bindtap="cellClick" data-section="{{section}}" data-row="{{row}}">  
+              <image class ="page-cell-icon" src="{{goods.server.icon}}" mode="aspectFill"> </image>
+              <text class="page-cell-name">{{goods.server.name}}</text>
+            </view>
+          </block>
+        </view>
+    </block>
+  </scroll-view>
 </view>
