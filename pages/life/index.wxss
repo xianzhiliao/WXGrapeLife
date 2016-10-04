@@ -11,41 +11,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20rpx;
+  margin-top: 40rpx;
 }
 .page-section-header-text {
   font-size: 32rpx;
   color: red;
-  /*background-color: blue;*/
 }
 .page-section {
-  display: inline-block;
+  display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  /*background-color: yellow;*/
   margin-top: 40rpx;
 }
 .page-cell {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 50%;
-  height: 400rpx;
+  width: 49%;
   margin-top: 10rpx;
   background-color: white;
-  vertical-align:top; 
-}
-.page-cell-space {
-  margin-left: 2%;
 }
 
 .page-cell-icon {
-  width: 300rpx;
-  height: 300rpx; 
+  width: 100%;
+  height: 200rpx;
 }
 
 .page-cell-name {
-  margin-top: 20rpx;
+  margin: 20rpx auto;
   font-size: 16rpx;
-  /*background-color: blue;*/
 }
